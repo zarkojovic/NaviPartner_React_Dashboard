@@ -53,7 +53,7 @@ const UsersTable: React.FC<UsersTableProps> = React.memo(({users, onUserClick}) 
             {users.length === 0 ? (
                 <div>No users available</div>
             ) : (
-                <table className="w-full mb-3 bg-white rounded-xl">
+                <table className="w-full mb-3 bg-white rounded-xl overflow-x-scroll">
                     <thead>
                     <tr>
                         <th className="font-medium text-slate-400 text-xs p-1">First Name</th>

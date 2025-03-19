@@ -58,7 +58,7 @@ export const AddBlogPage: React.FC = () => {
             <h1 className="text-xl font-bold mb-3 bg-white p-3 border-b">
                 <img src={coverPhoto} alt="Cover" className={"h-6"}/>
             </h1>
-            <div className="w-7/12 mx-auto bg-white p-3 rounded-lg shadow">
+            <div className="md:w-7/12 mx-auto bg-white p-3 rounded-lg shadow">
                 <div className="flex justify-between items-center">
                     <h1 className="text-xl font-bold">Add Blog for
                         user {selectUser!.first_name} {selectUser!.last_name}</h1>

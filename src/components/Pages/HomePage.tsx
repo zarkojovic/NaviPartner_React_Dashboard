@@ -11,6 +11,7 @@ import coverPhoto from "../../images/cover-photo.png";
 
 const StyledWrapper = styled.div`
     background-color: #f1f1f1;
+    overflow-x: hidden;
 `;
 
 export const HomePage: React.FC = () => {
@@ -47,8 +48,8 @@ export const HomePage: React.FC = () => {
             {loading ? (
                 <Loader/>
             ) : (
-                <div className="grid grid-cols-4 gap-2 p-3">
-                    <div className="col-span-3">
+                <div className="grid md:grid-cols-4 grid-cols-1 md:gap-2 p-3">
+                    <div className="col-span-3  overflow-x-scroll">
                         <UsersTable users={users} onUserClick={setActiveUser}/>
                         <Pagination page={page} totalNumberOfPages={totalNumberOfPages}
                                     onPageChange={handlePageChange}/>
